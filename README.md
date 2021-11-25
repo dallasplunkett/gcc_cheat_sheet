@@ -8,6 +8,21 @@ g++ -o <build-name> <object-files-to-link>
 mv <stuff> <place>
 ```
 
+# Main
+```
+-c <.cpp file(s)>		// compile .cpp file(s) into .o file(s)
+-I/<add-this-search-plath>	// Specify search path for angle bar includes, must be specific
+-L <library-path>		// still don't understand
+-o <build-name> <.o file(s)>	// builds an executable
+```
+
+# Misc
+```
+-g 	// turns on debugging
+-Wall 	// turns on most warnings
+-O2 	// turns on optimizations
+```
+
 # Part 1: "Flat" Directories
 
 #### dir

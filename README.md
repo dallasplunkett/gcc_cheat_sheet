@@ -1,6 +1,51 @@
 # gcc_findings
 Exploring how to use gcc to manually build external libraries. Also a bit of zsh exploration.
 
+## Part 1: Reference
+
+| **key** | **description** |
+| --- | --- |
+| `<something>` | replace with something |
+
+| **extensions** | **description** |
+| --- | --- |
+| `.cpp` | c++ source |
+| `.c` | c source |
+| `.hpp` | c++ header |
+| `.h` | c header |
+| `.i` | pre-processed code |
+| `.s` | assembly code |
+| `.dot` | a diagram of the syntax tree |
+| `.o` | object file |
+| `.dylib` | Macs dynamic library format |
+| `.dll` | Microsofts dynamic library format |
+| `.so` | Linuxs dynamic library format |
+| `.exe` | executable |
+
+| **flags** | **description** |
+| --- | --- |
+| `-E` | reveals the `.i` file(s) or pre-processed file(s). |
+| `-S <.cpp file(s)>` | reveals the `.s` file(s) or assembly file(s) |
+| `-c <.cpp-file(s)>` | converts the `.cpp` file(s) into `.o` file(s). |
+| `-t` | changes the details seen from the `objdump` program. |
+| `-I/<path>` | specifies a non stardard path to search for includes. |
+| `-l<sfml-window>` | implicit library to be found in the stardard path |
+| `-L/<path>` | explicit path to library. |
+| `-o <app> <.o file(s)>` | links the `.o` file(s) into an executable. |
+| `-fdump-tree-all-graph` | reveals the `.dot` file(s) for syntax trees. |
+| `-g` | reveals debugging information. |
+| `-Wall` | reveals most warnings. |
+| `-O2` | turns on optimization. |
+| `-E` | reveals what the pre-processor is doing. |
+
+| **tools** | **description** |
+| --- | --- |
+| `g++` |  invokes the gcc tools. |
+| `xdot <.dot file(s)>` | invokes the syntax tree viewing. |
+| `objdump <.o file(s)>` | shows what the object file(s) look like. |
+| `ldd <.exe>` | reveals the standard paths being searched for libraries |
+
+
 Currently this is the most common pattern I think is important
 ```zsh
 g++ -c <location-of-.cpp-files> -I/<search-path-for-includes>

@@ -45,6 +45,9 @@ Exploring how to use gcc to manually build external libraries. Also a bit of zsh
 | `objdump <.o file(s)>` | shows what the object file(s) look like. |
 | `ldd <.exe>` | reveals the standard paths being searched for libraries |
 
+## Part 2: the Stages
+
+![](/diagram.png)
 
 Currently this is the most common pattern I think is important
 ```zsh

@@ -1,5 +1,5 @@
-# clang_findings
-Exploring how to use clang to manually build external libraries. Also a bit of zsh exploration.
+# gcc_findings
+Exploring how to use gcc to manually build external libraries. Also a bit of zsh exploration.
 
 Currently this is the most common pattern I think is important
 ```zsh

@@ -1,6 +1,13 @@
 # clang_findings
 Exploring how to use clang to manually build external libraries. Also a bit of zsh exploration.
 
+Currently this is the most common pattern I think is important
+```zsh
+g++ -c <location-of-.cpp-files> -I/<search-path-for-includes>
+g++ -o <build-name> <object-files-to-link>
+mv <stuff> <place>
+```
+
 # Part 1: "Flat" Directories
 
 #### dir

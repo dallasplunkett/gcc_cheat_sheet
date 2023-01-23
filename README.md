@@ -22,9 +22,11 @@ g++ TARGET SRC.cpp BIN.o -I/PATH/HEADER.hpp -L/PATH/LIB.dylib -lLIB_NAME -F/PATH
 | `.s` | assembly code |
 | `.dot` | a diagram of the syntax tree |
 | `.o` | object file |
-| `.dylib` | Macs dynamic library format |
-| `.dll` | Microsofts dynamic library format |
-| `.so` | Linuxs dynamic library format |
+| `.dylib` | Mac dynamic library format |
+| `.dll` | Microsoft dynamic library format |
+| `.so` | Linux dynamic library format |
+| `.a` | Mac and Linux static library|
+| `.lib` | Microsoft static library|
 | `.exe` | executable |
 | `.framework`| framework file for macs |
 
